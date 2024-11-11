@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #eee2b5;
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 15px;
+}
+
+.wrapper {
+  width: min(100% - 2rem, 800px);
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  width: 100%;
+  text-align: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 20vh;
+  padding: 16px;
+}
+
+.form-container,
+.search-container,
+.alt-container {
+  width: min(100% - 2rem, 800px);
+  border-radius: 8px;
+  margin: 16px;
+  background: #f8f9fa;
+  padding: 16px;
+  flex-grow: 1;
+  height: fit-content;
+}
+
+.form {
+  display: flex;
+  padding: 16px;
+  flex-direction: column;
+  height: 300px;
+  border-radius: 20px;
+}
+
+.form-buku {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-buku label {
+  margin-bottom: 4px;
+  font-size: 18px;
+  font-weight: lighter;
+}
+
+#searchBook label {
+  padding-right: 10px;
+}
+
+input[type="text"],
+input[type="number"] {
+  font-family: "Poppins", sans-serif;
+  background-color: #eeeeee;
+  border: 2px solid #a02334;
+  border-radius: 8px;
+  padding: 10px;
+  box-sizing: border-box;
+  margin-bottom: 15px;
+  font-size: 15px;
+}
+
+button[type="submit"] {
+  width: fit-content;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  border-radius: 16px;
+  padding: 12px 20px;
+  border: 2px solid #a02334;
+  color: black;
+  font-size: 15px;
+  margin-top: auto;
+  align-self: flex-end;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #a02334;
+  color: white;
+}
+.edit-button,
+.delete-button,
+.undo-button,
+.complete-button {
+  border-radius: 16px;
+  padding: 12px 20px;
+  border: 2px solid #a02334;
+  color: black;
+  font-size: 15px;
+  margin-top: auto;
+  align-self: flex-end;
+  cursor: pointer;
+}
+
+.edit-button:hover,
+.delete-button:hover,
+.undo-button:hover,
+.complete-button:hover {
+  background-color: #a02334;
+  color: white;
+}
+
+input[type="text"],
+input[type="number"],
+button[type="submit"]:focus {
+  outline: none;
+}
+
+@media only screen and (max-width: 1024px) {
+  .form-container,
+  .search-container,
+  .alt-container {
+    width: 100%;
+  }
+
+  button[type="submit"] {
+    align-self: center;
+    margin-top: 10px;
+  }
+
+  input[type="text"],
+  input[type="number"] {
+    padding: 10px;
+    font-size: 15px;
+  }
+}
