@@ -28,7 +28,6 @@ Bookshelf App adalah aplikasi pembukuan sederhana yang memungkinkan pengguna unt
 Tampilan dari aplikasi:
 
 ![Screenshot 1](./screenshot1.png)
-![Screenshot 2](./screenshot2.png)
 
 ## Features
 
